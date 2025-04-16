@@ -109,6 +109,12 @@ body {
 .mobile-menu {
   display: none;
 }
+.menu-toggle:focus,
+.menu-toggle:active {
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
 
 @media (max-width: 768px) {
   .nav-inner {
@@ -124,6 +130,11 @@ body {
 
   .menu-toggle {
     display: block;
+    font-size: 26px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333; /* 這邊設定漢堡的顏色 */
   }
 
   .logo-wrap {
